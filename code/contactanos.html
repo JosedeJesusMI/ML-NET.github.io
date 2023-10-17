@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Cotizar</title>
+</head>
+
+
+<body class="d-flex flex-column">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="home.php">ML. NET</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="contactanos.html">Contactanos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page content-->
+        <section class="py-5">
+            <div class="container px-5">
+                <!-- Contact form-->
+                <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
+                    <div class="text-center mb-5">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+                        <h1 class="fw-bolder">¿En qué podemos ayudarte?</h1>
+                        <p class="lead fw-normal text-muted mb-0">Escríbenos tu mensaje </p>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-8 col-xl-6">
+                            <!-- * * * * * * * * * * * * * * *-->
+                            <!-- * * SB Forms Contact Form * *-->
+                            <!-- * * * * * * * * * * * * * * *-->
+                            <!-- This form is pre-integrated with SB Forms.-->
+                            <!-- To make this form functional, sign up at-->
+                            <!-- https://startbootstrap.com/solution/contact-forms-->
+                            <!-- to get an API token!-->
+                            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                <!-- Name input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="name" type="text" placeholder="Ingresa tu nombre" data-sb-validations="required" />
+                                    <label for="name">Nombre completo</label>
+                                    <div class="invalid-feedback" data-sb-feedback="naNombre:obligatorio">Ingresa tu nombre.</div>
+                                </div>
+                                <!-- Email address input-->
+                                
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="email" type="email" placeholder="name@gmail.com" data-sb-validations="required,email" />
+                                    <label for="email">Correo electronico</label>
+                                    <div class="invalid-feedback" data-sb-feedback="email:required">Se requiere un correo.</div>
+                                    <div class="invalid-feedback" data-sb-feedback="email:email">Correo no valido.</div>
+                                </div>
+                                <!-- Phone number input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="phone" type="tel" placeholder="(55) 55442233" data-sb-validations="required" />
+                                    <label for="phone">Teléfono/Celular</label>
+                                    <div class="invalid-feedback" data-sb-feedback="phone:required">Se requiere al menos un número.</div>
+                                </div>
+                                <!-- Message input-->
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" id="message" type="text" placeholder="Ingresa tu mensaje" style="height: 10rem" data-sb-validations="required"></textarea>
+                                    <label for="message">Mensaje</label>
+                                    <div class="invalid-feedback" data-sb-feedback="message:required">Se requiere un mensaje.</div>
+                                </div>
+                                <!-- Submit success message-->
+                                <!---->
+                                <!-- This is what your users will see when the form-->
+                                <!-- has successfully submitted-->
+            
+                                <!-- Submit error message-->
+                                <!---->
+                                <!-- This is what your users will see when there is-->
+                                <!-- an error submitting the form-->
+                                <div class="d-none" id="submitErrorMessage">
+                                    <div class="text-center text-danger mb-3">¡Error mensaje!</div>
+                                </div>
+                                <!-- Submit Button-->
+                                <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Enviar</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact cards-->
+                <div class="row gx-5 row-cols-2 row-cols-lg-4 py-5">
+                    <div class="col">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-chat-dots"></i></div>
+                        <div class="h5 mb-2">PARA COTIZAR</div>
+                        <p class="text-muted mb-0">Dirijete a la pamtalla de inicio y selecciona el sistema.</p>
+                    </div>
+                    <div class="col">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-people"></i></div>
+                        <div class="h5">PARA COTIZAR</div>
+                        <p class="text-muted mb-0">Dirijete a la pamtalla de inicio y selecciona el sistema.</p>
+                    </div>
+                    <div class="col">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-question-circle"></i></div>
+                        <div class="h5">PARA COTIZAR</div>
+                        <p class="text-muted mb-0">Dirijete a la pamtalla de inicio y selecciona el sistema.</p>
+                    </div>
+                    <div class="col">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-telephone"></i></div>
+                        <div class="h5">PARA COTIZAR</div>
+                        <p class="text-muted mb-0">Dirijete a la pamtalla de inicio y selecciona el sistema.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer-->
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0 text-white">contacto@ml-net.com 2023</div>
+                </div>
+                <div class="col-auto">
+                    <!-- <a href="https://www.facebook.com/josedejesus.munozislas.7?locale=es_LA"--><a href="#" class="link-light small">Facebook </a>
+          <span class="text-white mx-1">&middot;</span>
+          <!--<a class="link-light small" href="https://instagram.com/chuy_9820?igshid=NGVhN2U2NjQ0Yg==">--><a href="#" class="link-light small">instagram</a>
+          <span class="text-white mx-1">&middot;</span>
+          <!--<a class="link-light small" href="https://wa.me/5515652244?text=Me%20Interesa%20una%20cotizacion">--><a href="#" class="link-light small">whatsapp</a>
+       </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
